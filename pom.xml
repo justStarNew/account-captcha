@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.just.mvnbook.account</groupId>
+  <artifactId>account-captcha</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>account-captcha</name>
+  <description>用于生成账户注册时的验证码和图片信息。</description>
+  
+  <properties>
+  <spring.version>2.5.6</spring.version>
+  </properties>
+  <dependencies>
+  <dependency>
+  		<groupId>com.google.code.kaptcha</groupId>
+  		<artifactId>kaptcha</artifactId>
+  		<version>2.3</version>
+  		<classifier>jdk15</classifier>
+  	</dependency>
+  	
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-core</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-beans</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-context</artifactId>
+  		<version>${spring.version}</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>junit</groupId>
+  		<artifactId>junit</artifactId>
+  		<version>4.12</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.testng</groupId>
+  		<artifactId>testng</artifactId>
+  		<version>6.13.1</version>
+  	</dependency>
+  </dependencies>
+  
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.codehaus.mojo</groupId>
+  			<artifactId>cobertura-maven-plugin</artifactId>
+  			<version>2.7</version>
+  		</plugin>
+  	</plugins>
+  </build>
+  <repositories>
+<repository>
+<id>sonatype-forge</id>
+<name>Sonatype Forge</name>
+<url>http://repository.sonatype.org/content/groups/forge/</url>
+<releases>
+<enabled>true</enabled>
+</releases>
+<snapshots>
+<enabled>false</enabled>
+</snapshots>
+</repository>
+
+</repositories>
+
+
+  
+  
+  
+</project>
